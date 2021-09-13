@@ -87,6 +87,29 @@ a[1:5,1:5,3,3]
 
 ```{r}
 
+## This creates a list with the Strepsirhini
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
+    "Daubentoniidae")
+Lorisoidea <- c("Lorisidae", "Galagidae")
+Strepsirhini <- list(Lemuroidea, Lorisoidea)
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
+
+## This creates a list with the Haplorhini
+Tarsioidea <- c("Tarsiidae")
+
+Catarrhini <- c("Cercopithecidae","Hylobatidae","Hominidae")
+Platyrrhini <- c("Cebidae","Atelidae","Pitheciidae")
+Anthropoidea <- list(Platyrrhini,Catarrhini)
+names(Anthropoidea) <- list("Platyrrhini","Catarrhini")
+
+Haplorhini <- list(Anthropoidea,Tarsioidea)
+names(Haplorhini) <- list("Anthropoidea","Tarsioidea")
+
+## This creates the complete Primates list
+Primates <- list(Haplorhini,Strepsirhini)
+names(Primates) <- list("Haplorhini","Strepsirhini")
+
+Primates
 ```
 
 
