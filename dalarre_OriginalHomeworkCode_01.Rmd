@@ -37,7 +37,8 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ## First, I create a vector containing the sentence and I call it v
 v <- c("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
 
-## With this function, I split the vector in the different words and I call this new separate list w (I don't know why it is stored as a list and not as a vector), and I call "string" the only element in the list so i can refer to it later
+## With this function, I split the vector in the different words and I call this new separate list w (I don't know why it is stored as a list and not as a vector), 
+#and I call "string" the only element in the list so i can refer to it later
 w <- stringr :: str_split(v, pattern = " ")
 names(w) <- c("string")
 
