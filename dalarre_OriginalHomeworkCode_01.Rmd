@@ -57,6 +57,32 @@ m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
 x <- c(m[,2],m[,3],m[,6])
 x
 
-y <-
+## This creates a vector containing the values from the 6th to the 8th row of the matrix m
+y <- c(m[6:8,])
+y
+
+## This creates a vector containing the elements from row 2, column 2 to row 6, column 9 of the matrix m
+z <- m[2,2]:m[6,9]
+z
 ```
 
+
+## Challenge 3
+
+```{r}
+
+```
+
+
+## Challenge 4
+
+```{r}
+
+```
+
+
+## Challenge 5
+
+```{r}
+
+```
