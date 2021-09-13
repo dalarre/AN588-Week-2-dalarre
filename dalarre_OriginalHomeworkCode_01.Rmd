@@ -34,14 +34,18 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ```{r}
 
-## First, I create a vector containing the words and I call it v
-v <- c("Stately,","plump","Buck","Mulligan","came","from","the","stairhead,","bearing","a","bowl","of","lather","on","which","a","mirror","and","a","razor","lay","crossed.")
+## First, I create a vector containing the sentence and I call it v
+v <- c("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
 
-##With this function, I extract from x the elements from position 3 to position 3, which means I extract every third element
-str_sub(x,3,3)
+## With this function, I split the vector in the different words and I call this new separate list w (I don't know why it is stored as a list and not as a vector), and I call "string" the only element in the list so i can refer to it later
+w <- stringr :: str_split(v, pattern = " ")
+names(w) <- c("string")
 
-##This function is for removing punctuation and special characters from the string
-gsub("[[:punct:]]","",x)
+##This function is for removing punctuation and special characters (and it gets the info stored as a vector)
+w <- gsub("[[:punct:]]","",w$string)
+
+## With this function I select every third element from the vector with the separate words
+w[seq(from = 1 , to = 22, by = 3)]
 
 
 ```
@@ -139,4 +143,4 @@ str(df3)
 ## CHALLENGES
 In challenge 5 i had trouble making the change of type of data permanent in the df3 data frame. I looked how to do it in Google.
 In challenge 4 i had trouble because i was putting quotation marks when making the lists that contained lists. I ended up figuring out that that was the problem.
-I also had trouble with the first challenge because I didn't know how to extract every third element. I looked on the web of the package and found the function I was looking for and how it worked.
+I also had trouble with the first challenge because after using str_split the info got stored as a list so I had to name it in order to be able to work with it.
