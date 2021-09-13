@@ -50,6 +50,7 @@ gsub("[[:punct:]]","",x)
 ## Challenge 2
 
 ```{r}
+
 ## I create the matrix m
 m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
 
@@ -70,6 +71,14 @@ z
 ## Challenge 3
 
 ```{r}
+
+## This creates an array of 5x5x4x4 (4 dimensions) with elements from 400 to 1 in a descending order
+a <- array(data = 400:1, dim = c(5,5,4,4))
+
+## The following return what is asked in the challenged
+a[1,1,1,2]
+a[2,3,2,]
+a[1:5,1:5,3,3]
 
 ```
 
