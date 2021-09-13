@@ -117,4 +117,21 @@ Primates
 
 ```{r}
 
+## This creates a matrix with the given data ordered row-wise
+m3 <- matrix(data = c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
+m3
+
+## This coerces the matrix to a data frame
+df3 <- as.data.frame(m3)
+df3
+
+## This coerces the second column of the data frame to be logical-valued
+df3[,2] = as.logical(df3[,2])
+
+## This coerces the third column of the data frame to be factor-valued
+df3[,3] = as.factor(df3[,3])
+
+## This shows the data type of each variable in the data frame
+str(df3)
+
 ```
