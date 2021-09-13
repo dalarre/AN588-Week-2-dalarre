@@ -28,12 +28,35 @@ plot(pressure)
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 
+## MODULE 04 CHALLENGES
 
 ## Challenge 1
 
 ```{r}
-x <- c("Stately,","plump","Buck","Mulligan","came","from","the","stairhead,","bearing","a","bowl","of","lather","on","which","a","mirror","and","a","razor","lay","crossed.")
+
+## First, I create a vector containing the words and I call it v
+v <- c("Stately,","plump","Buck","Mulligan","came","from","the","stairhead,","bearing","a","bowl","of","lather","on","which","a","mirror","and","a","razor","lay","crossed.")
+
+##With this function, I extract from x the elements from position 3 to position 3, which means I extract every third element
+str_sub(x,3,3)
+
+##This function is for removing punctuation and special characters from the string
+gsub("[[:punct:]]","",x)
+
 
 ```
 
+
+## Challenge 2
+
+```{r}
+## I create the matrix m
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+
+## This creates a vector containing the values of the 2nd, 3rd and 6th column of the matrix m
+x <- c(m[,2],m[,3],m[,6])
+x
+
+y <-
+```
 
