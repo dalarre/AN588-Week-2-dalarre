@@ -195,7 +195,8 @@ pre code {
 <pre class="r"><code>## First, I create a vector containing the sentence and I call it v
 v &lt;- c(&quot;Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.&quot;)
 
-## With this function, I split the vector in the different words and I call this new separate list w (I don&#39;t know why it is stored as a list and not as a vector), and I call &quot;string&quot; the only element in the list so i can refer to it later
+## With this function, I split the vector in the different words and I call this new separate list w (I don&#39;t know why it is stored as a list and not as a vector), 
+#and I call &quot;string&quot; the only element in the list so i can refer to it later
 w &lt;- stringr :: str_split(v, pattern = &quot; &quot;)
 names(w) &lt;- c(&quot;string&quot;)
 
