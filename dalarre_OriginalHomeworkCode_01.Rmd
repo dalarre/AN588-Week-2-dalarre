@@ -135,3 +135,8 @@ df3[,3] = as.factor(df3[,3])
 str(df3)
 
 ```
+
+## CHALLENGES
+In challenge 5 i had trouble making the change of type of data permanent in the df3 data frame. I looked how to do it in Google.
+In challenge 4 i had trouble because i was putting quotation marks when making the lists that contained lists. I ended up figuring out that that was the problem.
+I also had trouble with the first challenge because I didn't know how to extract every third element. I looked on the web of the package and found the function I was looking for and how it worked.
