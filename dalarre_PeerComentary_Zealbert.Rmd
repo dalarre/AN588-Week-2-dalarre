@@ -30,7 +30,7 @@ plot(pressure)
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 ---
   title: "dalarre_OriginalHomeworkCode_01"
-output: html_document
+output: html_document 
 ---
   
   ```{r setup, include=FALSE}
