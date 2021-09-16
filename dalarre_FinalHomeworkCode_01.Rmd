@@ -61,7 +61,7 @@ w[seq(from = 1 , to = 22, by = 3)]
 ## I create the matrix m
 m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
 
-## After doing peer commentary and looking at Zoe's code, I realized that I could do this challenge in a simpler way than what I did on my original homework code, so I changed it here:
+## After doing peer commentary and looking at Zoe's code, I realized that I could do this challenge in a simpler way than what I did on my original homework code, because I was creating vectors, which wasn't necessary, so I changed it here:
 
 ## This extracts the values of the 2nd, 3rd and 6th column of the matrix m and assings them to x
 x <- m[,c(2,3,6)]
